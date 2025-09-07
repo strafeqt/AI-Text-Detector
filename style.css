@@ -14,6 +14,11 @@ body {
     padding: 60px 20px;
 }
 
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 h1 {
     display: block;
     font-size: 3em;
@@ -81,7 +86,7 @@ textarea:focus {
     transform: translateY(-1px);
 }
 
-input[type="submit"] {
+input[type="submit"], .button {
     background: #8b5fbf;
     border: 1px solid rgba(139, 69, 209, 0.5);
     color: white;
@@ -93,13 +98,13 @@ input[type="submit"] {
     transition: all 0.3s ease;
 }
 
-input[type="submit"]:hover {
+input[type="submit"]:hover, .button:hover {
     background: #9d6fd1;
     transform: translateY(-2px);
     border-color: rgba(139, 69, 209, 0.8);
 }
 
-input[type="submit"]:active {
+input[type="submit"]:active, .button:active {
     transform: translateY(-1px);
 }
 
@@ -114,7 +119,7 @@ input[type="submit"]:active {
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-    display: none;
+    display: none; /* Hidden by default */
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.5s ease;
@@ -183,7 +188,7 @@ body::after {
         padding: 40px 20px;
     }
     
-    titleh1 {
+    h1 {
         font-size: 2.5em;
     }
     
@@ -191,7 +196,7 @@ body::after {
         font-size: 1.1em;
     }
     
-    input[type="submit"] {
+    input[type="submit"], .button {
         padding: 16px 40px;
         font-size: 16px;
     }
