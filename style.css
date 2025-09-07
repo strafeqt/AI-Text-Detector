@@ -14,7 +14,6 @@ body {
     padding: 60px 20px;
 }
 
-
 h1 {
     display: block;
     font-size: 3em;
@@ -115,6 +114,16 @@ input[type="submit"]:active {
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+#result.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 #result h3 {
